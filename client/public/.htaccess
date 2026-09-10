@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Allow existing files and directories to be accessed directly
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Send all other requests to index.html for React Router SPA
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Set correct MIME types for images and scripts
+<IfModule mod_mime.c>
+  AddType image/png .png
+  AddType image/jpeg .jpg .jpeg
+  AddType image/svg+xml .svg
+  AddType image/webp .webp
+  AddType text/css .css
+  AddType application/javascript .js
+</IfModule>

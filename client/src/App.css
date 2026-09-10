@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.admin-shell {
+	background:
+		radial-gradient(circle at 85% 0%, rgba(251, 146, 60, 0.10), transparent 25rem),
+		#f5f6f8;
+}
+
+.admin-shell table th {
+	letter-spacing: 0.08em;
+}
+
+.admin-shell ::-webkit-scrollbar {
+	height: 8px;
+	width: 8px;
+}
+
+.admin-shell ::-webkit-scrollbar-thumb {
+	background: #cbd5e1;
+	border-radius: 999px;
+}
