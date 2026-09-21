@@ -94,7 +94,7 @@ const DatingHero = () => {
             </div>
 
             {/* Main Punchy Dating Headline */}
-            <h1 className="mt-5 text-4xl font-black leading-[1.08] tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
+            <h1 className="mt-5 text-3xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
               Find Your{" "}
               <span className="relative inline-block">
                 <span className="bg-gradient-to-r from-rose-500 via-fuchsia-500 to-violet-600 bg-clip-text text-transparent">
