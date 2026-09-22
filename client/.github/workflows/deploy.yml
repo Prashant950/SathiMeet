@@ -3,7 +3,7 @@ name: Deploy React App to Hostinger
 on:
   push:
     branches:
-      - main   # Agar aapka default branch master hai toh yahan master likhein
+      - main
 
 jobs:
   web-deploy:
@@ -18,10 +18,13 @@ jobs:
         with:
           node-version: 18
 
+      # working-directory: ./client zaroori hai kyunki package.json client ke andar hai
       - name: 📦 Install Dependencies
+        working-directory: ./client
         run: npm install
 
       - name: 🔨 Build Project
+        working-directory: ./client
         run: npm run build
 
       - name: 📂 Sync Files via FTP
@@ -31,5 +34,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          local-dir: ./dist/
+          local-dir: ./client/dist/
           server-dir: ./public_html/
