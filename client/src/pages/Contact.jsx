@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import SEO from "../components/common/SEO";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -68,6 +69,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 selection:bg-rose-500 selection:text-white flex flex-col justify-between">
+      <SEO
+        title="Contact Us - Sathi Meet Support & Inquiries"
+        description="Contact Sathi Meet customer support team for help, inquiries, partner support, and safe companionship booking queries across India."
+        canonical="/contact"
+      />
       <Header />
 
       <main className="flex-1 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">

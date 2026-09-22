@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import showCustomToast from "../utils/toast";
 import { useRegisterUserMutation } from "../features/api/apiSlice";
+import SEO from "../components/common/SEO";
 
 // Romantic Love / Heart Themed Background Image
 const HERO_BG_IMAGE =
@@ -104,6 +105,11 @@ const Register = () => {
 
   return (
     <div className="min-h-screen bg-[#faf8fb]">
+      <SEO
+        title="Create an Account - Sathi Meet"
+        description="Sign up for Sathi Meet to find 100% ID-verified companions, date partners, and lifestyle assistants in your city."
+        canonical="/register"
+      />
       <div className="flex min-h-screen flex-col lg:flex-row">
         {/* Desktop Hero Section with Background Image */}
         <div className="relative hidden overflow-hidden lg:flex lg:w-[48%]">

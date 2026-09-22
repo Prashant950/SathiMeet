@@ -1,3 +1,4 @@
+import SEO from "../components/common/SEO";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 
@@ -13,6 +14,11 @@ import WhyChooseSathiMeet from "./components/about/WhyChooseSathiMeet";
 const About = () => {
   return (
     <>
+      <SEO
+        title="About Us - Sathi Meet | India's #1 Social Companion Platform"
+        description="Learn about Sathi Meet - our mission to eliminate loneliness and provide safe, verified, professional companionship, dating partners and lifestyle support across India."
+        canonical="/about"
+      />
       <Header />
 
       <AboutHero />

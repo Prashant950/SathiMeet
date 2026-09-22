@@ -1,3 +1,4 @@
+import SEO from "../components/common/SEO";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 
@@ -11,6 +12,11 @@ import FAQCTA from "./components/faqPage/FAQCTA";
 const FAQPage = () => {
   return (
     <>
+      <SEO
+        title="Frequently Asked Questions (FAQ) - Sathi Meet"
+        description="Find answers to common questions about Sathi Meet services, safety policies, verification, payment, and companion booking in India."
+        canonical="/faq"
+      />
       <Header />
 
       <FAQHero />

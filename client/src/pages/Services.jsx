@@ -24,6 +24,7 @@ import {
 
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import SEO from "../components/common/SEO";
 import BuyServicesModal from "../components/services/BuyServicesModal";
 import ServiceCard from "../components/services/ServiceCard";
 import { serviceCategories } from "../data/services";
@@ -171,6 +172,11 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-[#fcfbfe] flex flex-col selection:bg-fuchsia-500 selection:text-white">
+      <SEO
+        title="Services & Pricing - Sathi Meet | Verified Companion & Lifestyle Support"
+        description="Explore verified social companion and lifestyle support services across India. Coffee dates, movie partners, travel companions, elder care, shopping buddies & more on Sathi Meet."
+        canonical="/services"
+      />
       {/* Global Header */}
       <Header />
 

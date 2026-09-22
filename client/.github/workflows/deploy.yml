@@ -3,7 +3,7 @@ name: Deploy React App to Hostinger
 on:
   push:
     branches:
-      - main
+      - main   # Agar aapka default branch master hai toh yahan master likhein
 
 jobs:
   web-deploy:
@@ -31,5 +31,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          local-dir: ./dist/ # Agar Create-React-App hai toh ./build/ karein, Vite ke liye ./dist/
+          local-dir: ./dist/
           server-dir: ./public_html/

@@ -3,6 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
 import showCustomToast from "../utils/toast";
 import { useAuth } from "../hooks/useAuth";
+import SEO from "../components/common/SEO";
 import { 
   Mail, 
   Lock, 
@@ -164,6 +165,11 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-[#faf8fb]">
+      <SEO
+        title="Login - Sathi Meet"
+        description="Login to your Sathi Meet account to manage your companionship bookings, profile settings, and chat with verified partners."
+        canonical="/login"
+      />
       <div className="flex min-h-screen flex-col lg:flex-row">
         {/* Desktop Hero Section with Background Image */}
         <div className="relative hidden overflow-hidden lg:flex lg:w-[48%]">
